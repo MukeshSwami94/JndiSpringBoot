@@ -38,7 +38,7 @@ public class TomcatConfigs {
                 resource.setProperty("driverClassName", "com.mysql.jdbc.Driver");
                 resource.setProperty("url", "jdbc:mysql://localhost/demo");
                 resource.setProperty("username", "root");
-                resource.setProperty("password", "Mukesh@2015");
+                resource.setProperty("password", "Mukesh");
 
                 context.getNamingResources().addResource(resource);
             }
