@@ -33,7 +33,7 @@ public class TomcatConfigs {
                 ContextResource resource = new ContextResource();
 
                 resource.setType(DataSource.class.getName());
-                resource.setName("j4s");
+                resource.setName("mk");
                 resource.setProperty("factory", "org.apache.tomcat.jdbc.pool.DataSourceFactory");
                 resource.setProperty("driverClassName", "com.mysql.jdbc.Driver");
                 resource.setProperty("url", "jdbc:mysql://localhost/demo");
@@ -49,7 +49,7 @@ public class TomcatConfigs {
     public DataSource jndiDataSource() throws IllegalArgumentException, NamingException
     {
         JndiObjectFactoryBean bean = new JndiObjectFactoryBean();
-        bean.setJndiName("java:/comp/env/j4s");
+        bean.setJndiName("java:/comp/env/mk");
         bean.setProxyInterface(DataSource.class);
         bean.setLookupOnStartup(false);
         bean.afterPropertiesSet();
